@@ -173,6 +173,7 @@ NSString* const kAPPBackgroundEventDeactivate = @"deactivate";
     // Play music even in background and dont stop playing music
     // even another app starts playing sound
     [session setCategory:AVAudioSessionCategoryPlayback
+                   withOptions:AVAudioSessionCategoryOptionMixWithOthers
                    error:NULL];
 
     // Active the audio session
@@ -241,8 +242,13 @@ NSString* const kAPPBackgroundEventDeactivate = @"deactivate";
  */
 + (NSString*) wkProperty
 {
-    NSString* str = @"X2Fsd2F5c1J1bnNBdEZvcmVncm91bmRQcmlvcml0eQ==";
-    NSData* data  = [[NSData alloc] initWithBase64EncodedString:str options:0];
+    NSString* str;
+    if (@available(iOS 12.2, *)) {
+      str = @"YWx3YXlzUnVuc0F0Rm9yZWdyb3VuZFByaW9yaXR5";
+    } else {
+      str = @"X2Fsd2F5c1J1bnNBdEZvcmVncm91bmRQcmlvcml0eQ==";
+    }
+    NSData* data = [[NSData alloc] initWithBase64EncodedString:str options:0];
 
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
