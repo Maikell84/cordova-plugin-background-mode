@@ -1,5 +1,13 @@
 ## ChangeLog
 
+#### Version 0.7.5 (05.07.2019)
+
+- Remove Windows Platform
+
+#### Version 0.7.4 (28.06.2019)
+
+- Fix crash on Android 9
+
 #### Version 0.7.3 (02.05.2019)
 
 - Forked Repository
