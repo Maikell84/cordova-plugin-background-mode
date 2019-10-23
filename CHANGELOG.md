@@ -1,5 +1,9 @@
 ## ChangeLog
 
+#### Version 0.7.8
+
+- Remove iOS
+
 #### Version 0.7.7 (05.07.2019)
 
 - Fix Android runtime Error 'cordova.plugins.backgroundMode.ondeactivate is not a function'
