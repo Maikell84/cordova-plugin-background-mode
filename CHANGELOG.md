@@ -1,6 +1,6 @@
 ## ChangeLog
 
-#### Version 0.7.8
+#### Version 0.7.8 (23.10.2019)
 
 - Remove iOS
 
