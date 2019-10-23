@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-background-mode-3",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "Prevent app from going to sleep in background.",
   "repository": {
     "type": "git",
@@ -10,7 +10,6 @@
     "appplant",
     "background",
     "ecosystem:cordova",
-    "cordova-ios",
     "cordova-android",
     "cordova-browser"
   ],
